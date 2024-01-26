@@ -1,0 +1,154 @@
+/*---- NavBar --- */
+
+.navbar .dropdown-menu {
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar {
+    background-color: #065da6;
+    overflow: visible;
+}
+
+#navbarNav li a {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.navbar .logo {
+    height: 50px;
+    width: auto;
+}
+
+.navarDulces {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu {
+    background-color: #065da6;
+}
+
+.dropdown-item {
+    white-space: nowrap;
+}
+
+.navbar .nav-link {
+    color: white;
+    margin-right: 30px;
+    transition: .2s;
+    text-decoration: none;
+}
+
+a.nav-link:hover {
+    padding-bottom: 3px;
+    color: #15ff00;
+
+}
+
+/*---- End NavBar --- */
+
+/*--- cont video ---*/
+.contenedor-video {
+    z-index: 1;
+    border-top: 20px solid #ffffff;
+    /* Borde superior negro de 20px */
+    border-right: 100px solid #ffffff;
+    /* Borde derecho negro de 100px */
+    border-bottom: 20px solid #ffffff;
+    /* Borde inferior negro de 20px */
+    border-left: 100px solid #ffffff;
+    /* Borde izquierdo negro de 100px */
+}
+
+video {
+    width: 100%;
+    /* Hace que el video se ajuste al tamaño del contenedor */
+    height: auto;
+    /* Mantiene la relación de aspecto del video */
+}
+
+/* Media query para pantallas de hasta 768px de ancho */
+@media (max-width: 768px) {
+    .contenedor-video {
+        border-top: 10px solid #ffffff;
+        border-right: 15px solid #ffffff;
+        border-bottom: 10px solid #ffffff;
+        border-left: 15px solid #ffffff;
+    }
+}
+
+/* Media query para pantallas aún más pequeñas, como teléfonos móviles */
+@media (max-width: 480px) {
+    .contenedor-video {
+        border-top: 2px solid #ffffff;
+        border-right: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+        border-left: 1px solid #ffffff;
+    }
+}
+
+/*--- Ende Cont Video ---*/
+
+/*---- Carrusel --- */
+.contenedor-carrusel {
+    margin: 20px 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.carrusel {
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.carrusel-contenedor {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.elemento {
+    padding: 0;
+    margin: 0;
+    width: 140px;
+    height: 140px;
+    margin: 0 10px;
+    background-color: #065da6;
+    overflow: hidden;
+}
+
+.elemento img {
+    height: 100%;
+    width: auto;
+    position: relative;
+    object-fit: cover;
+    /* Asegura que las imágenes cubran completamente el elemento */
+    object-position: center;
+}
+
+.boton-carrusel {
+    background-color: #fa0c0c;
+    border: none;
+    cursor: pointer;
+    /* Personalización de los botones */
+}
+
+@media (max-width: 768px) {
+    .contenedor-carrusel {
+        margin: 0 50px;
+    }
+
+    .elemento {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+/* Estilos para los elementos y animaciones aquí */
+
+
+/*---- End Carrusel --- */
