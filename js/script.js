@@ -20,3 +20,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+$('.dropdown-submenu a.dropdown-toggle').on("mouseover", function(e) {
+    var $el = $(this);
+    var $parent = $(this).offsetParent(".dropdown-menu");
+    $(this).next().toggle();
+    e.preventDefault();
+    e.stopPropagation();
+  });
+  
