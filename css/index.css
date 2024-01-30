@@ -98,8 +98,8 @@ video {
 .elemento {
     padding: 0;
     margin: 0;
-    width: 140px;
-    height: 140px;
+    width: 150px !important;
+    height: auto;
     margin: 0 10px;
     background-color: #065da6;
     overflow: hidden;
@@ -133,6 +133,35 @@ video {
     -webkit-box-shadow: 40px 38px 5px 0px rgba(0, 0, 0, 0.97);
     -moz-box-shadow: 40px 38px 5px 0px rgba(0, 0, 0, 0.97);
     box-shadow: 40px 38px 5px 0px rgba(0, 0, 0, 0.97);
+}
+
+.contenedor-ext {
+    position: relative;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    color: #022a80;
+    position: absolute;
+    top: 50%;
+    /* Centra los botones verticalmente */
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+    /* Blanco. Ajusta según el color de fondo */
+}
+
+.carousel-control-prev {
+    left: -50px;
+    /* Ajusta según necesidades */
+}
+
+.carousel-control-next {
+    right: -50px;
+    /* Ajusta según necesidades */
 }
 
 /* Estilos para los elementos y animaciones aquí */
