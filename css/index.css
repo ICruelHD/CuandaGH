@@ -3,30 +3,6 @@
     color: #51ff00;
 }
 
-.navbar.dropdown-menu {
-    position: relative;
-    z-index: 1000;
-}
-.navbar-nav .dropdown-item {
-    white-space: nowrap;
-    display: flex;
-}
-.dropdown-menu {
-    background-color: #013661e8;
-}
-.dropdown-submenu {
-    position: relative;
-}
-.dropdown-submenu .dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-top: -6px;
-    margin-left: 0px;
-    /* Muestra el submenu en el lado derecho del item del menú */
-  }
-  .dropdown-submenu:hover>.dropdown-menu {
-    display: block;
-  }
 .navbar {
     background-color: #065da6;
     overflow: visible;
@@ -37,33 +13,32 @@
     font-size: 1rem;
 }
 
+.navbar.dropdown-menu {
+    position: relative;
+    z-index: 1000;
+}
+
 .navbar .logo {
     height: 70px;
     width: auto;
 }
 
-
-.navbar .nav-link {
-    color: white;
-    margin-right: 30px;
-    transition: .2s;
-    text-decoration: none;
+.dropdown-menu {
+    background-color: #022a80;
 }
 
-a.nav-link:hover {
-    padding-bottom: 3px;
-    color: #15ff00;
-
-}
-
-.dropdown-submenu {
-    position: relative;
-}
-
-.dropdown-submenu .dropdown-menu {
-    top: 0;
+.dropdown-menu .dropdown-submenu .dropdown-menu {
+    position: absolute;
+    /* Mantiene el submenú posicionado absolutamente */
+    top: 0%;
+    /* Coloca el submenú justo debajo del ítem del menú */
     left: 100%;
-    margin-top: -1px;
+    /* Alinea el submenú con el lado izquierdo del ítem del menú */
+}
+
+.dropdown-menu .dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+    /* Muestra el submenú cuando se pasa el mouse */
 }
 
 
@@ -112,22 +87,13 @@ video {
 /*--- Ende Cont Video ---*/
 
 /*---- Carrusel --- */
-.contenedor-carrusel {
+#contenedor-carrusel {
     margin: 20px 100px;
     position: relative;
     display: flex;
     align-items: center;
 }
 
-.carrusel {
-    overflow: hidden;
-    flex-grow: 1;
-}
-
-.carrusel-contenedor {
-    display: flex;
-    transition: transform 0.5s ease;
-}
 
 .elemento {
     padding: 0;
@@ -148,12 +114,6 @@ video {
     object-position: center;
 }
 
-.boton-carrusel {
-    background-color: #fa0c0c;
-    border: none;
-    cursor: pointer;
-    /* Personalización de los botones */
-}
 
 @media (max-width: 768px) {
     .contenedor-carrusel {
@@ -166,11 +126,31 @@ video {
     }
 }
 
+.carousel-inner img {
+    width: 100px;
+    height: auto;
+    border-color: blue;
+    -webkit-box-shadow: 40px 38px 5px 0px rgba(0, 0, 0, 0.97);
+    -moz-box-shadow: 40px 38px 5px 0px rgba(0, 0, 0, 0.97);
+    box-shadow: 40px 38px 5px 0px rgba(0, 0, 0, 0.97);
+}
 
 /* Estilos para los elementos y animaciones aquí */
 
 
 /*---- End Carrusel --- */
+/*---- seccion info --- */
+.informacion .btn {
+    align-content: center;
+}
+
+.informacion .btn-catalogo {
+    background: #065da6;
+    color: #ffffff;
+    border: 20%;
+}
+
+/*---- End seccion info --- */
 
 
 /*---- Foother --- */
