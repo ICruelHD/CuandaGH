@@ -1,8 +1,4 @@
-/*---- NavBar --- */
-.navbar-toggler {
-    color: #51ff00;
-}
-
+/*------------------------------------ NavBar ---------------------------------------- */
 .navbar {
     background-color: #065da6;
     overflow: visible;
@@ -23,28 +19,52 @@
     width: auto;
 }
 
+
+.dropdown .btn {
+    background-color: transparent;
+    margin: 0%;
+}
+.dropdown-menu .dropdown-item{
+    font-weight: bold;
+    color: #ffffff;
+    background-color: transparent;
+}
+.dropdown-menu .dropdown-item:hover{
+    font-weight: bold;
+    color: #022a80;
+    background-color: #065da6;
+}
+
 .dropdown-menu {
     background-color: #022a80;
 }
 
-.dropdown-menu .dropdown-submenu .dropdown-menu {
-    position: absolute;
-    /* Mantiene el submenú posicionado absolutamente */
-    top: 0%;
-    /* Coloca el submenú justo debajo del ítem del menú */
-    left: 100%;
-    /* Alinea el submenú con el lado izquierdo del ítem del menú */
+.dropdown-menu .list-unstyled {
+    text-align: center;
+    margin: 0;
 }
 
-.dropdown-menu .dropdown-submenu:hover>.dropdown-menu {
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 100%;
+    left: 20%;
+    /* Posiciona el submenú a la derecha del botón padre */
+    margin: top 0.5rem;
+    ;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
     display: block;
-    /* Muestra el submenú cuando se pasa el mouse */
+    
 }
 
 
-/*---- End NavBar --- */
+/*---------------------------------------------- End NavBar ------------------------------------------------------ */
 
-/*--- cont video ---*/
+/*--- -------------------------------------------cont video---------------------------------------------------------*/
 .contenedor-video {
     z-index: 1;
     border-top: 20px solid #ffffff;
@@ -72,6 +92,7 @@ video {
         border-bottom: 10px solid #ffffff;
         border-left: 15px solid #ffffff;
     }
+
 }
 
 /* Media query para pantallas aún más pequeñas, como teléfonos móviles */
@@ -101,12 +122,12 @@ video {
     width: 150px !important;
     height: auto;
     margin: 0 10px;
-    background-color: #065da6;
+    background-color: #0ee20e;
     overflow: hidden;
 }
 
 .elemento img {
-    height: 100%;
+    height: auto;
     width: auto;
     position: relative;
     object-fit: cover;
@@ -169,9 +190,7 @@ video {
 
 /*---- End Carrusel --- */
 /*---- seccion info --- */
-.informacion .btn {
-    align-content: center;
-}
+.informacion .btn {}
 
 .informacion .btn-catalogo {
     background: #065da6;
