@@ -1,3 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 /*------------------------------------ NavBar ---------------------------------------- */
 .navbar {
     background-color: #065da6;
@@ -24,12 +33,14 @@
     background-color: transparent;
     margin: 0%;
 }
-.dropdown-menu .dropdown-item{
+
+.dropdown-menu .dropdown-item {
     font-weight: bold;
     color: #ffffff;
     background-color: transparent;
 }
-.dropdown-menu .dropdown-item:hover{
+
+.dropdown-menu .dropdown-item:hover {
     font-weight: bold;
     color: #022a80;
     background-color: #065da6;
@@ -58,9 +69,13 @@
 
 .dropdown-submenu:hover>.dropdown-menu {
     display: block;
-    
+
 }
 
+.frutas {
+    height: 30px;
+    width: auto;
+}
 
 /*---------------------------------------------- End NavBar ------------------------------------------------------ */
 
@@ -108,87 +123,106 @@ video {
 /*--- Ende Cont Video ---*/
 
 /*---- Carrusel --- */
-#contenedor-carrusel {
-    margin: 20px 100px;
-    position: relative;
-    display: flex;
-    align-items: center;
-}
 
 
-.elemento {
-    padding: 0;
-    margin: 0;
-    width: 150px !important;
-    height: auto;
-    margin: 0 10px;
-    background-color: #0ee20e;
-    overflow: hidden;
-}
-
-.elemento img {
-    height: auto;
-    width: auto;
-    position: relative;
-    object-fit: cover;
-    /* Asegura que las imágenes cubran completamente el elemento */
-    object-position: center;
-}
-
-
-@media (max-width: 768px) {
-    .contenedor-carrusel {
-        margin: 0 50px;
-    }
-
-    .elemento {
-        width: 100px;
-        height: 100px;
-    }
-}
-
-.carousel-inner img {
-    width: 100px;
-    height: auto;
-    border-color: blue;
-    -webkit-box-shadow: 40px 38px 5px 0px rgba(0, 0, 0, 0.97);
-    -moz-box-shadow: 40px 38px 5px 0px rgba(0, 0, 0, 0.97);
-    box-shadow: 40px 38px 5px 0px rgba(0, 0, 0, 0.97);
-}
 
 .contenedor-ext {
+    display: flex;
+    padding: 0 10px;
+    min-height: 25vh;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+}
+
+.wrapper {
+    display: flex;
+    max-width: 85%;
     position: relative;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-    color: #022a80;
-    position: absolute;
+.wrapper i {
     top: 50%;
-    /* Centra los botones verticalmente */
+    height: 44px;
+    width: 44px;
+    color: #022a80;
+    cursor: pointer;
+    font-size: 1.15rem;
+    font-weight:  bold;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background: #fff;
+    border-radius: 50%;
     transform: translateY(-50%);
+    transition: transform 0.1s linear;
+    z-index: 1;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    filter: invert(100%);
-    /* Blanco. Ajusta según el color de fondo */
+.wrapper i:active {
+    transform: translateY(-50%) scale(0.9);
 }
 
-.carousel-control-prev {
-    left: -50px;
-    /* Ajusta según necesidades */
+.wrapper i:hover {
+    background: #12e115;
 }
 
-.carousel-control-next {
-    right: -50px;
-    /* Ajusta según necesidades */
+.wrapper i:first-child {
+    left: -22px;
+    display: none;
+}
+
+.wrapper i:last-child {
+    right: -22px;
+}
+
+.wrapper .carousel {
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging img {
+    pointer-events: none;
+}
+
+.carousel img {
+    height: 120PX;
+    object-fit: cover;
+    user-select: none;
+    -webkit-user-select: none;
+    margin-left: 14px;
+    width: calc(100% / 8);
+}
+
+.carousel img:first-child {
+    margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+    .carousel img {
+        width: calc(100% / 6);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .carousel img {
+        width: calc(100% 5);
+    }
 }
 
 /* Estilos para los elementos y animaciones aquí */
 
 
-/*---- End Carrusel --- */
+/*------------------------------------- End Carrusel ------------------------------ */
+
 /*---- seccion info --- */
 .informacion .btn {}
 
