@@ -199,8 +199,13 @@ video {
     object-fit: cover;
     user-select: none;
     -webkit-user-select: none;
-    margin-left: 20px;
-    width: calc(100% / 8);
+    margin-left: 16px;
+    border-left: 3px solid #022a80;
+    border-top: 3px solid #022a80;
+    border-right: 10px solid #022a80;
+    border-bottom: 10px solid #022a80;
+
+    width: calc(100% / 9);
 }
 
 .carousel img:first-child {
@@ -239,11 +244,9 @@ video {
 .informacion h2 {
     color: #065da6;
     font-weight: bold;
+    font-size:1.5vw;
 }
 
-.informacion .img {
-    width: 29vw;
-}
 .informacion p{
     font-size: 1.6em;
     text-align: center;
