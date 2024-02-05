@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 /* Import Google font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
@@ -129,7 +130,7 @@ video {
 .contenedor-ext {
     display: flex;
     padding: 0 10px;
-    min-height: 25vh;
+    min-height: 15vh;
     align-items: center;
     justify-content: center;
     background: #ffffff;
@@ -148,7 +149,7 @@ video {
     color: #022a80;
     cursor: pointer;
     font-size: 1.15rem;
-    font-weight:  bold;
+    font-weight: bold;
     position: absolute;
     text-align: center;
     line-height: 44px;
@@ -194,11 +195,11 @@ video {
 }
 
 .carousel img {
-    height:120px;
+    height: 15vh;
     object-fit: cover;
     user-select: none;
     -webkit-user-select: none;
-    margin-left: 14px;
+    margin-left: 20px;
     width: calc(100% / 8);
 }
 
@@ -217,22 +218,52 @@ video {
         width: calc(100% 5);
     }
 }
+
 /*------------------------------------- End Carrusel ------------------------------ */
 
 /*---- seccion info --- */
 .informacion {
     text-align: center;
-    
+    padding: 10px;
 }
 
-.informacion .btn-catalogo {
+.informacion .btn {
     background: #065da6;
-    font-size: 3vh;
-    border-radius: 0;
+    font-size: 1em;
+    font-weight: bold;
     color: #ffffff;
-    border: 20%;
+    border: 0;
+    padding: 5 10em;
 }
 
+.informacion h2 {
+    color: #065da6;
+    font-weight: bold;
+}
+
+.informacion .img {
+    width: 29vw;
+}
+.informacion p{
+    font-size: 1.6em;
+    text-align: center;
+    margin:  0 20vh;
+}
+.informacion .social {
+    margin-top: 1%;
+    background: #1C3A8C;
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 5px;
+    padding-bottom: 0px;
+ }
+ .informacion .social a {
+    color: #fff;
+ }
 /*---- End seccion info --- */
 
 
