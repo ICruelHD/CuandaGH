@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contenedor-video {
+    z-index: 1;
+    border-top: 20px solid #ffffff;
+    /* Borde superior blanco de 20px */
+    border-right: 100px solid #ffffff;
+    /* Borde derecho blanco de 100px */
+    border-bottom: 20px solid #ffffff;
+    /* Borde inferior blanco de 20px */
+    border-left: 100px solid #ffffff;
+    /* Borde izquierdo blanco de 100px */
+}
+
+.video {
+    width: 80%;
+    /* Hace que el video se ajuste al tamaño del contenedor */
+    height: auto;
+    /* Mantiene la relación de aspecto del video */
+}
+
+/* Media query para pantallas de hasta 768px de ancho */
+@media (max-width: 768px) {
+    .contenedor-video {
+        border-top: 10px solid #ffffff;
+        border-right: 15px solid #ffffff;
+        border-bottom: 10px solid #ffffff;
+        border-left: 15px solid #ffffff;
+    }
+
+}
+
+/* Media query para pantallas aún más pequeñas, como teléfonos móviles */
+@media (max-width: 480px) {
+    .contenedor-video {
+        border-top: 2px solid #ffffff;
+        border-right: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+        border-left: 1px solid #ffffff;
+    }
+}
