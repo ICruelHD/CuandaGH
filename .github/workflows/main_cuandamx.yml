@@ -63,4 +63,4 @@ jobs:
           app-name: 'cuandamx'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_34EB3DD81C924FB3B89A4AE918C50E10 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9FAA0725902D4549A5CCBF0DB51032D7 }}
