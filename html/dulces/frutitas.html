@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="../../css/detallefrutas">
+    <link rel="stylesheet" href="../../css/detallefrutas.css">
 </head>
 
 <body>
@@ -17,40 +17,131 @@
 
 
     <section class="contenedor-video">
-        <video autoplay muted class="w-100 h-10" loop>
+        <video autoplay muted class="banner" loop>
             <source src="../../assets/video/Vídeos banners/Banner Cubitos.mp4" type="video/mp4">
         </video>
         <br>
     </section>
     <!-- Contenedor de la imagen y el texto -->
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <!-- Aquí va tu imagen -->
-                <img src="../../assets/img/bolsas/bolsa frutas.png" class="img-fluid" alt="Imagen Alternativa">
-            </div>
-            <div class="col-6">
-                <!-- Aquí va tu tabla o contenido -->
-                <div class="card">
-                    <div class="card-header">
-                        Nombre: LUCKY GUMMYS TIBURONES
-                        Nombre: LUCKY GUMMYS TIBURONES
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="../../assets/img/bolsas/bolsa frutas.png" class="img-fluid"
+                                alt="Imagen Alternativa">
+                        </div>
+                        <div class="col-6">
+                            <table border="1">
+                                <!-- Cuerpo de la tabla -->
+                                <tbody>
+                                    <tr>
+                                        <td class="titulo">Nombre: </td>
+                                        <td class="descripcion">LUCKY GUMMYS TIBURONES</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titulo">Genérico: </td>
+                                        <td class="descripcion">Acabado Brillado/ Doble Capa</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titulo">Descripción: </td>
+                                        <td class="descripcion">Gomitas de Grenetina Sabores Frutale</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titulo">Sabor: </td>
+                                        <td class="descripcion">Mora</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titulo">Empaque Primario: </td>
+                                        <td class="descripcion">PETE/ PEBD</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titulo">Peso neto bolsa: </td>
+                                        <td class="descripcion">1.000 Kg.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titulo">Medidas Bolsa: </td>
+                                        <td class="descripcion">21.5  x 29.5 cm.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titulo">Corrugado: </td>
+                                        <td class="descripcion">Fraft.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titulo">Contenido: </td>
+                                        <td class="descripcion">8 bolsa de 1.00 Kg.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titulo">Medidad Corrugado: </td>
+                                        <td class="descripcion">41 x 24.5 x 20 cm.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titulo">Tarima: </td>
+                                        <td class="descripcion">1.00 x 1.20 m.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titulo">Cajas por Cama: </td>
+                                        <td class="descripcion">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titulo">Camas por Tarima: </td>
+                                        <td class="descripcion">7</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titulo">Peso promedioo por pz: </td>
+                                        <td class="descripcion">8.0 g.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titulo">Pz promedio por Kg: </td>
+                                        <td class="descripcion">125 pz</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
                     </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Género: Gomitas de Grenetina Sabores Frutales</li>
-                        <li class="list-group-item">Descripción: Acabado Brillado/ Doble Capa</li>
-                        <!-- Más elementos aquí -->
-                    </ul>
                 </div>
             </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <!-- Aquí va tu imagen -->
+                            <img src="../../assets/img/bolsas/bolsa frutas.png" class="img-fluid"
+                                alt="Imagen Alternativa">
+                        </div>
+                        <div class="col-6">
+                            <!-- Aquí va tu tabla o contenido -->
+                            <div class="card">
+                                <div class="card-header">
+                                    Nombre: LUCKY GUMMYS TIBURONES
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Género: Gomitas de Grenetina Sabores Frutales</li>
+                                    <li class="list-group-item">Descripción: Acabado Brillado/ Doble Capa</li>
+                                    <!-- Más elementos aquí -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-
-
-
-
-
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

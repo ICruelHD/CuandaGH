@@ -1,0 +1,70 @@
+#contact{
+    background-image: url();    
+    background-size:cover;  
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.contact h1{
+    font-size: 2em;
+    color: darkblue;
+    padding: 5px; 
+}
+.contact h2{
+    font-size: 1.5em;
+    color: darkblue;
+    font-weight: 400;
+}
+.contact select{
+    background-color: darkblue;
+    padding: 5px;
+    color: white;
+    margin top: 5px;
+    margin bottom: 5px;
+}
+.contact p{
+    color: black;
+    font-size: 1em;
+}
+.contact label{
+    color: black;
+    font-size: 1em;
+}
+
+.contact input{
+    border-color: red;
+}
+.contact #Estado{
+    border-color: red;
+    background-color: white;
+    color:black;
+}
+.contact textarea{
+   border-color: red; 
+}
+.contact  button[type="submit"] {
+	background: darkblue;
+	color: #fff;
+    border-radius: 10%;
+    width: 15%;
+    height: auto;
+    padding: 5px;
+    margin: 5px;
+    
+}
+.contact  button[type="submit"]:hover {
+	background: blue;
+}
+.contact a{
+    font-size:1em;
+    color: darkblue;
+    font-weight: bolder;
+    font-style: italic;
+}
+.contact #espacio{
+    padding-top: 50px;
+}
+.informacion{
+    color: darkblue;
+    font-size: 1em;
+    text-decoration: none;
+}

@@ -5,18 +5,13 @@
 
 .contenedor-video {
     z-index: 1;
+    justify-content: center;
+    text-align: center;
     border-top: 20px solid #ffffff;
-    /* Borde superior blanco de 20px */
-    border-right: 100px solid #ffffff;
-    /* Borde derecho blanco de 100px */
-    border-bottom: 20px solid #ffffff;
-    /* Borde inferior blanco de 20px */
-    border-left: 100px solid #ffffff;
-    /* Borde izquierdo blanco de 100px */
 }
 
-.video {
-    width: 80%;
+.banner {
+    width: 90%;
     /* Hace que el video se ajuste al tamaño del contenedor */
     height: auto;
     /* Mantiene la relación de aspecto del video */
@@ -45,19 +40,41 @@
 
 .container {
     font-family: Arial, sans-serif;
-    max-width: 600px;
+    max-width: 90%;
     margin: auto;
 }
 
-.card-header {
-    background: #f8f9fa;
-    border-bottom: 2px solid #000;
+.container img {
+    display: block;
+    margin: auto;
+    padding: 3% 0;
+}
+
+table {
+    margin-top: 1em;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table .titulo {
     font-weight: bold;
+    color: #065da6;
+    text-align: right;
 }
 
-.list-group-item {
-    border: none;
-    line-height: 1.5;
+table .descripcion {
+    font-weight: bold;
+    color: #020202;
+    text-align: left;
 }
 
-/* Puedes añadir más estilos personalizados según sea necesario */
+th,
+td {
+    border: 1px solid rgb(255, 255, 255);
+    text-align: left;
+    padding: 2px;
+}
+
+th {
+    background-color: #0e289c;
+}
