@@ -42,12 +42,16 @@
     font-family: Arial, sans-serif;
     max-width: 90%;
     margin: auto;
+    text-align: center;
 }
 
 .container img {
     display: block;
     margin: auto;
     padding: 3% 0;
+    text-align: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 table {
@@ -77,4 +81,75 @@ td {
 
 th {
     background-color: #0e289c;
+}
+
+h5 {
+    background-color: #065da6;
+    color: #ffffff;
+}
+
+h6 {
+    color: #065da6;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container .row,
+.column {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.carousel-inner .btn {
+    background: #065da6;
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffffff;
+    border: 0;
+    padding: 5 10em;
+    transition: 0.5s;
+}
+.carousel-inner .btn:hover{
+    background: #ffffff;
+    color: #065da6;
+}
+
+
+
+.frutas-foother{
+    height: inherit;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.frutas-foother img{
+    height: 4.3vw;
+    transition: .1s ease-in-out;
+}
+.frutas-foother img:hover{
+    transform: scale(1.4);
+}
+.frutas-foother a{
+    width: calc(100% / 22);
+}
+
+
+
+.footer {
+    background-color: #065da6;
+}
+
+.footer a {
+    color: #ffffff;
+    font-size: 0.7em;
+    text-decoration: none;
+    transition: 3ms;
+}
+
+footer a:hover {
+    color: #12e115;
 }

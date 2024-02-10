@@ -130,7 +130,7 @@ video {
 .contenedor-ext {
     display: flex;
     padding: 0 10px;
-    min-height: 15vh;
+    min-height: 18vh;
     align-items: center;
     justify-content: center;
     background: #ffffff;
@@ -138,7 +138,7 @@ video {
 
 .wrapper {
     display: flex;
-    max-width: 70%;
+    max-width: 80%;
     position: relative;
 }
 
@@ -193,7 +193,10 @@ video {
 .carousel.dragging img {
     pointer-events: none;
 }
-
+.carousel a {
+    margin-left: 1vw;
+}
+ 
 .carousel img {
     height: 15vh;
     object-fit: cover;
@@ -204,9 +207,15 @@ video {
     border-top: 3px solid #022a80;
     border-right: 10px solid #022a80;
     border-bottom: 10px solid #022a80;
-
     width: calc(100% / 9);
+    transition: 0.5s;
+
 }
+.carousel img:hover {
+    transform: scale(1.2);
+    z-index: 2;
+}
+   
 
 .carousel img:first-child {
     margin-left: 0px;
