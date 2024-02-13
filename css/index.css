@@ -17,8 +17,12 @@
 #navbarNav li a {
     color: #ffffff;
     font-size: 1rem;
+    transition: 0.3s;
 }
-
+#navbarNav li a:hover{
+    color:#000000;
+    transform: scale(1.2);
+}
 .navbar.dropdown-menu {
     position: relative;
     z-index: 1000;
@@ -27,8 +31,11 @@
 .navbar .logo {
     height: 70px;
     width: auto;
+    transition: 0.3s;
 }
-
+.navbar .logo:hover {
+    transform: scale(1.2);
+}
 
 .dropdown .btn {
     background-color: transparent;
