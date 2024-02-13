@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/*------------------------------------ NavBar ---------------------------------------- */
+.navbar {
+    background-color: #065da6;
+    overflow: visible;
+}
+
+#navbarNav li a {
+    color: #ffffff;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+#navbarNav li a:hover{
+    color:#000000;
+    transform: scale(1.2);
+}
+.navbar.dropdown-menu {
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    height: 70px;
+    width: auto;
+    transition: 0.3s;
+}
+.navbar .logo:hover {
+    transform: scale(1.2);
+}
+
+.dropdown .btn {
+    background-color: transparent;
+    margin: 0%;
+}
+
+.dropdown-menu .dropdown-item {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: transparent;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+.dropdown-menu .dropdown-item:hover {
+    font-weight: bold;
+    color: #022a80;
+    background-color: #065da6;
+}
+.dropdown-menu {
+    background-color: #022a80;
+}
+.dropdown-menu .list-unstyled {
+    text-align: center;
+    margin: 0;
+}
+.dropdown-submenu {
+    position: relative;
+}
+.dropdown-submenu .dropdown-menu {
+    top: 100%;
+    left: 20%;
+    margin: top 0.5rem;
+    ;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+.frutas {
+    height: 30px;
+    width: auto;
+}
+
+/*---------------------------------------------- End NavBar ------------------------------------------------------ */
