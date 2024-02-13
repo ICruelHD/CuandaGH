@@ -273,18 +273,14 @@ video {
 .informacion .social a {
     color: #fff;
 }
-
 /*---- End seccion info --- */
-
-
-/*---- Foother --- */
+/*----------------------------------------------- Foother ------------------------------------------------------- */
 .footer {
     background-color: #065da6;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-
 .footer .row {
     justify-content: center;
     align-items: center;
@@ -301,6 +297,4 @@ video {
 footer a:hover {
     color: #12e115;
 }
-
-
 /*---- End Fother --- */

@@ -1,67 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url("../assets/img/fondo.png");
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+.conoce .d-flex h1 {
+    color: #022a80;
+    font-weight: bold;
+    font-size:  4rem;
+    align-items: end;
+}
+#conoce .cuandazul {
+    max-width: 20vh;
+    height: auto;
+    margin: 0;
+}
+
+
 #conoce2 {
-    background-color: darkblue;
-    color:white;
+    background-color: #065da6;
+    color: white;
     border-radius: 15px;
     height: 250px;
     margin: 5px;
 }
 
-#conocecuanda{
+#conocecuanda {
     background-color: darkblue;
     width: 100%;
     height: 100%;
 }
-.conoce h1{
+
+.conoce h1 {
     color: white;
-    font-size: 2em;
+    font-weight: bold;
+    font-size: 3em;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     padding: 5px 0;
 }
-.conoce  figure{
+
+.conoce figure {
     position: relative;
     cursor: pointer;
     overflow: hidden;
     width: 100%;
     height: 100%;
 }
-.conoce  figure img{
+
+.conoce figure img {
     opacity: 50%;
     max-width: 100%;
     height: auto;
     transition: all 500ms ease-out;
 }
-.conoce figure p{
+
+.conoce figure p {
     color: white;
     font-size: 1em;
     text-align: left;
-    
-    }
-.conoce figure h2{
+
+}
+
+.conoce figure h2 {
     color: white;
-    font-size:1.5em;
+    font-size: 1.5em;
     text-align: center;
 }
 
-.conoce figure .inf{
+.conoce figure .inf {
     position: absolute;
-    top:0;
+    top: 0;
     width: 100%;
     height: 100%;
-    background: blue;
+    background: #022a80;
     transition: all 500ms ease-out;
     opacity: 0;
     visibility: hidden;
     text-align: left;
     border-radius: 15px;
 }
-.conoce figure:hover > .inf{
+
+.conoce figure:hover>.inf {
     opacity: 1;
     visibility: visible;
-   
+
 }
-.conoce figure:hover > .inf p{
+
+.conoce figure:hover>.inf p {
     margin-top: 15px;
     margin-bottom: 15px;
     padding: 15px;
-   
+
 }
