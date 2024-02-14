@@ -7,7 +7,7 @@ $Estado = $POST['Estado'];
 $Alcaldia = $POST['Alcaldia'];
 $telefono = $_POST['telephone'];
 $mensaje = nl2br($_POST['mensaje']);
-$to = "aimeemoreno71@gmail.com";
+$to = "aimeemoreno71@gmail.com, barza.-chivas@hotmail.com";
 $from = $email;
 $message = 'Empresa:' . $Empresa . ' 
     Nombre:' . $Nombre . '

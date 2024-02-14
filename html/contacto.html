@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="../css/navbar.css">
   <link rel="stylesheet" href="../css/form.css">
 
+  <!-- script captcha-->
+  <script src="https://www.google.com/recaptcha/enterprise.js?render=6LepQWspAAAAADRElpJDuQcomvao2-WD3Nwv4iyO"></script>
 </head>
 
 <body>
@@ -209,6 +211,7 @@
   <!--------------------------------- End NavBar -------------------------------------->
 
 
+  <!------------------------------------ FORM------------------------------------------>
   <section id="contact" class="contact sectionContact-bg">
     <div class="container">
       <div class="row">
@@ -220,7 +223,7 @@
               <form method="post" action="../php/form.php">
 
                 <div class="col-12">
-                  <select id="asunto" name="asunto" class="form-select" aria-label="">
+                  <select id="asunto" name="asunto" class="form-select" aria-label=".">
                     <option selected>Selecciona</option>
                     <option value="Tengo una queja y/o sugerencia">Tengo una queja y/o sugerencia</option>
                     <option value="Quiero comprar un producto">Quiero comprar un producto</option>
@@ -282,7 +285,12 @@
                 <textarea id="mensaje" class="form-control" name="mensaje" data-rule="required"
                   data-msg="Por favor envíanos tus dudas y/o comentarios" required rows="2"
                   placeholder="Mensaje"></textarea>
+
+
                 <div align="right" class="col-lg-12">
+                  <button class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit'
+                    data-action='submit'>Enviar</button>
+                    
                   <button id="mybton" type="submit" class="btn btn-primary"><b>Enviar</b></button>
                 </div>
               </form>
@@ -306,6 +314,7 @@
       </div>
     </div>
   </section>
+  <!------------------------------------ END FORM------------------------------------------>
 
 
   <!--FOOTER-->

@@ -71,3 +71,7 @@ carousel.addEventListener("touchmove", dragging);
 
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);
+
+function onSubmit(token) {
+  document.getElementById("demo-form").submit();
+}
