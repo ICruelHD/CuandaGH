@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-image: url("../assets/img/fondo.png");
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+.contenedor h1 {
+    color: #022a80;
+    font-weight: bold;
+    font-size:  4rem;
+    border-bottom: transparent solid 2.2vh;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+}
+.contenedor {
+    display: flex;
+    flex-wrap:nowrap;
+    align-items: stretch; /* Alinea verticalmente si es necesario */
+  }
+  .Container .imagen{
+    max-width: 50vw;
+  }
+  
+  .bloque-texto, .bloque-imagen {
+    flex: 50%; /* Hace que ambos ocupen el 100% del ancho en pantallas pequeñas */
+  }
+  
+  @media (min-width: 768px) { /* Este es un punto de ruptura común para "pantallas grandes", pero puedes ajustarlo */
+    .bloque-texto, .bloque-imagen {
+      flex: 50%; /* En pantallas grandes, ambos ocupan el 50% */
+    }
+  }
+  
