@@ -1,40 +1,67 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
+
 body {
-    background-image: url("../assets/img/fondo.png");
-    background-size: cover;
-    position: relative;
-    width: 100%;
-    overflow-x: hidden;
+  background-image: url("../assets/img/fondo.png");
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
 }
-.contenedor h1 {
+
+.contenedor-energia .container {
+  max-width: 90%;
+  min-height: 80vh;
+  flex-wrap: nowrap;
+  display: flex;
+}
+
+.contenedor-energia h2 {
+  color: #022a80;
+  font-weight: bold;
+  font-size: 4rem;
+  border-bottom: transparent solid 2.2vh;
+  margin-bottom: 1.5rem;
+  margin-right: 1.5rem;
+  margin-left: 5vw;
+}
+
+
+.bloque-imagen img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+.bloque-texto p{
+  color: #022a80;
+  font-weight: bold;
+}
+.bloque-texto, .bloque-imagen {
+  flex: 1 0 50%;
+  position: relative;
+}
+
+
+/* Estilos para pantallas pequeñas */
+@media (max-width:960px) {
+  .contenedor-energia .bloque-texto {
+      background-image: url('../assets/img/energialimpia.png'); /* Ajusta la ruta de la imagen */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white; /* Asegúrate de que el color del texto sea legible sobre la imagen */
+  }
+
+  .contenedor-energia .bloque-imagen {
+      display: none; /* Oculta el bloque de imagen en pantallas pequeñas */
+  }
+  .bloque-texto p{
     color: #022a80;
     font-weight: bold;
-    font-size:  4rem;
-    border-bottom: transparent solid 2.2vh;
-    margin-bottom: 1.5rem;
-    margin-right: 1.5rem;
+  }
+
 }
-.contenedor {
-    display: flex;
-    flex-wrap:nowrap;
-    align-items: stretch; /* Alinea verticalmente si es necesario */
-  }
-  .Container .imagen{
-    max-width: 50vw;
-  }
-  
-  .bloque-texto, .bloque-imagen {
-    flex: 50%; /* Hace que ambos ocupen el 100% del ancho en pantallas pequeñas */
-  }
-  
-  @media (min-width: 768px) { /* Este es un punto de ruptura común para "pantallas grandes", pero puedes ajustarlo */
-    .bloque-texto, .bloque-imagen {
-      flex: 50%; /* En pantallas grandes, ambos ocupan el 50% */
-    }
-  }
-  

@@ -38,7 +38,7 @@
     }
 }
 
-.container {
+.carousel-inner .container {
     font-family: Arial, sans-serif;
     max-width: 90%;
     margin: auto;
@@ -142,7 +142,6 @@ h6 {
 .footer {
     background-color: #065da6;
 }
-
 .footer a {
     color: #ffffff;
     font-size: 0.7em;
