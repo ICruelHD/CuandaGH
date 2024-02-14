@@ -78,32 +78,37 @@ function onSubmit(token) {
 
 // scrip para energia limpia, mostrar mas texto
 function showMoreText() {
-    // Obtén todos los párrafos con la clase 'additional-text'
     var additionalTexts = document.querySelectorAll('.additional-text');
     var btnText = document.getElementById("read-more-btn");
-    var allTextShown = true;
 
-    // Verifica el estado actual del botón para alternar la acción
-    if (btnText.textContent === "Leer más") {
-        // Muestra el siguiente párrafo oculto
-        for (var i = 0; i < additionalTexts.length; i++) {
-            if (additionalTexts[i].classList.contains('show')) {
-                continue;
-            } else {
-                additionalTexts[i].classList.add("show");
-                allTextShown = false; // No todos los textos están mostrados aún
-                break; // Solo muestra el primer párrafo oculto y luego sale del bucle
-            }
+    // Encuentra el índice del último párrafo visible
+    var lastVisibleIndex = -1;
+    for (var i = 0; i < additionalTexts.length; i++) {
+        if (additionalTexts[i].classList.contains('show')) {
+            lastVisibleIndex = i;
         }
-        // Si después del bucle todos los textos están mostrados, cambia el texto del botón
-        if (allTextShown) {
+    }
+
+    if (btnText.textContent === "Leer más") {
+        // Si hay párrafos ocultos, muestra el siguiente
+        var nextParagraph = lastVisibleIndex + 1;
+        if (nextParagraph < additionalTexts.length) {
+            additionalTexts[nextParagraph].classList.add("show");
+        }
+        // Si todos los párrafos están ahora visibles, cambia el texto del botón
+        if (nextParagraph === additionalTexts.length - 1) {
             btnText.textContent = "Mostrar menos";
         }
     } else {
-        // Oculta todos los párrafos
-        additionalTexts.forEach(function (text) {
-            text.classList.remove("show");
-        });
-        btnText.textContent = "Leer más";
+        // Si el botón dice "Mostrar menos", oculta el último párrafo visible
+        if (lastVisibleIndex >= 0) {
+            additionalTexts[lastVisibleIndex].classList.remove("show");
+        }
+        // Si todos los párrafos están ahora ocultos, cambia el texto del botón
+        if (lastVisibleIndex === 0) {
+            btnText.textContent = "Leer más";
+        }
     }
 }
+
+

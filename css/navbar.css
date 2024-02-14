@@ -92,3 +92,41 @@
 
 /*---------------------------------------------- End NavBar ------------------------------------------------------ */
 
+
+
+
+
+.frutas-foother{
+    height: inherit;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.frutas-foother img{
+    height: 4.3vw;
+    transition: .1s ease-in-out;
+}
+.frutas-foother img:hover{
+    transform: scale(1.4);
+}
+.frutas-foother a{
+    width: calc(100% / 22);
+}
+
+
+
+.footer {
+    background-color: #065da6;
+}
+.footer a {
+    color: #ffffff;
+    font-size: 0.7em;
+    text-decoration: none;
+    transition: 3ms;
+}
+
+footer a:hover {
+    color: #12e115;
+}
