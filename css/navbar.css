@@ -11,17 +11,16 @@
 /*------------------------------------ NavBar ---------------------------------------- */
 .navbar {
     background-color: #065da6;
-    overflow: visible;
 }
 
 #navbarNav li a {
     color: #ffffff;
-    font-size: 1.2rem;
+    font-size: 1em;
     transition: 0.7s;
 }
 
 #navbarNav li a:hover {
-    color: #000000;
+    color: #12e115;
     transform: scale(1.2);
 }
 

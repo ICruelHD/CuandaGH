@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="description de la pag">
     <title>CUANDA || Lucky Gummy</title>
-    <link rel="icon" type="img/jpg" href="./assets/img/index/favicon.ico">
+    <link rel="icon" type="img/jpg" href="../assets/img/index/favicon.ico">
 
     <!--CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -14,6 +14,8 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/galeria.css">
+
 
     <!-- script captcha-->
     <script
@@ -38,7 +40,7 @@
                     <li class="nav-item active"><a class="nav-link" href="../html/contacto.html">Contacto</a></li>
                     <li class="nav-item active"><a class="nav-link" href="../html/energialimpia.html">Energía Limpia</a>
                     </li>
-                    <li class="nav-item active"><a class="nav-link" href="./html/videocorporativo.html">Video
+                    <li class="nav-item active"><a class="nav-link" href="../html/videocorporativo.html">Video
                             Corporativo</a></li>
                 </ul>
             </div>
@@ -56,8 +58,9 @@
                                     aria-expanded="false">1
                                     kg.</button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="../html/dulces/frutitas.html"> <img class="frutas"
-                                                src="../assets/img/index/frutas/lg-frut01.png" alt="Lucky Gummy"> </a>
+                                    <li><a class="dropdown-item" href="../html/dulces/frutitas.html"> <img
+                                                class="frutas" src="../assets/img/index/frutas/lg-frut01.png"
+                                                alt="Lucky Gummy"> </a>
                                     </li>
                                     <li><a class="dropdown-item" href="#"> <img class="frutas"
                                                 src="../assets/img/index/frutas/lg-osi01.png" alt="Lucky Gummy"> </a>
@@ -210,9 +213,78 @@
     </nav>
     <!--------------------------------- End NavBar -------------------------------------->
 
-
     <!------------------------------------ FORM------------------------------------------>
-    
+    <h1>Historia</h1>
+
+    <div class="timeline-container">
+        <div class="timeline-logo">
+            <img src="../assets/img/index/cuanda-azul.png" alt="Logo" class="logo">
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date" onclick="toggleImages('1981')">1981</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date" onclick="toggleImages('1983')">1983</div>
+
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date" onclick="toggleImages('1990')">1990</div>
+
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date" onclick="toggleImages('1995')">1995</div>
+
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date" onclick="toggleImages('2000')">2000</div>
+
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date" onclick="toggleImages('2005')">2005</div>
+
+            </div>
+            <!-- Repite para más fechas -->
+        </div>
+
+    </div>
+    <div>
+        <div id="1981" class="images-container">
+            <img src="../assets/img/energialimpia.png" alt="Imagen de Enero" class="timeline-image">
+            <img src="../assets/img/energialimpia.png" alt="Imagen de Enero" class="timeline-image">
+            <img src="../assets/img/energialimpia.png" alt="Imagen de Enero" class="timeline-image">
+            <!-- Más imágenes si es necesario -->
+        </div>
+        <div id="1983" class="images-container">
+            <img src="../assets/img/energialimpia.png" alt="Imagen de Enero" class="timeline-image">
+            <img src="../assets/img/energialimpia.png" alt="Imagen de Enero" class="timeline-image">
+            <img src="../assets/img/energialimpia.png" alt="Imagen de Enero" class="timeline-image">
+        </div>
+        <div id="1990" class="images-container">
+            <img src="../assets/img/energialimpia.png" alt="Imagen de Enero" class="timeline-image">
+            <img src="../assets/img/energialimpia.png" alt="Imagen de Enero" class="timeline-image">
+            <img src="../assets/img/energialimpia.png" alt="Imagen de Enero" class="timeline-image">
+            <!-- Más imágenes si es necesario -->
+        </div>
+        <div id="1995" class="images-container">
+            <img src="../assets/img/energialimpia.png" alt="Imagen de Enero" class="timeline-image">
+            <img src="../assets/img/energialimpia.png" alt="Imagen de Enero" class="timeline-image">
+            <img src="../assets/img/energialimpia.png" alt="Imagen de Enero" class="timeline-image">
+            <!-- Más imágenes si es necesario -->
+        </div>
+        <div id="2000" class="images-container">
+            <img src="../assets/img/energialimpia.png" alt="Imagen de Enero" class="timeline-image">
+            <img src="../assets/img/energialimpia.png" alt="Imagen de Enero" class="timeline-image">
+            <img src="../assets/img/energialimpia.png" alt="Imagen de Enero" class="timeline-image">
+            <!-- Más imágenes si es necesario -->
+        </div>
+        <div id="2005" class="images-container">
+            <img src="../assets/img/energialimpia.png" alt="Imagen de Enero" class="timeline-image">
+            <img src="../assets/img/energialimpia.png" alt="Imagen de Enero" class="timeline-image">
+            <img src="../assets/img/energialimpia.png" alt="Imagen de Enero" class="timeline-image">
+            <!-- Más imágenes si es necesario -->
+        </div>
+    </div>
     <!------------------------ END FORM------------------------------------------>
 
 

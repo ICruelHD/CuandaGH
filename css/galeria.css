@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+  background-image: url("../assets/img/fondo.png");
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+}
+ body h1 {
+  color: #333;
+  font-weight: bold;
+  text-align: start;
+  margin-left: 5vw;
+  margin-top: 5vh;
+ }
+
+.timeline-container {
+  margin-top: 10vh;
+  min-height: 30vh;
+  margin-left: 5vw;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+}
+.timeline-logo {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+.timeline-logo .logo {
+  width: 10vw; /* Ajusta según el tamaño de tu logo */
+  height: auto;
+}
+
+.timeline {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0;
+}
+
+.timeline-item {
+  margin: 10px;
+  text-align: center;
+}
+
+.timeline-date {
+  align-items: center;
+  justify-content: center;
+  background-color: #065da6;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+
+}
+
+.images-container {
+  justify-content: center;
+  display: none; /* Inicialmente oculto */
+  flex-direction: row;
+}
+
+.timeline-image {
+  max-width: 200px; /* Ajusta según sea necesario */
+  margin-top: 10px;
+  display: block; /* Asegura que las imágenes no sean en línea */
+}
+
+@media (max-width: 600px) {
+  .timeline-logo .logo {
+      width: 50px;
+  }
+  
+  .timeline-date {
+      padding: 3px 6px;
+  }
+}

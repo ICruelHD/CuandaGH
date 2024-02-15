@@ -112,3 +112,18 @@ function showMoreText() {
 }
 
 
+
+function toggleImages(imagesId) {
+    var imagesDiv = document.getElementById(imagesId);
+    var isHidden = imagesDiv.style.display === "none";
+    // Primero, ocultamos todos los contenedores de imágenes
+    document.querySelectorAll('.images-container').forEach(function(div) {
+        div.style.display = "none";
+    });
+    // Luego, basado en el estado previo del contenedor en cuestión, lo mostramos o lo ocultamos
+    if (isHidden) {
+        imagesDiv.style.display = "flex";
+    } else {
+        imagesDiv.style.display = "none";
+    }
+}
