@@ -10,7 +10,6 @@ body {
     background-size: cover;
     position: relative;
     width: 100%;
-    overflow-x: hidden;
 }
 .conoce .d-flex h1 {
     color: #022a80;

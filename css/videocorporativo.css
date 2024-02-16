@@ -1,0 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html, body {
+    height: 100%;
+    margin: 0
+}
+
+body {
+    background: #ffffff;
+    max-width: 100%;
+}
+.site-content {
+    flex: 1; /* Flex crece para ocupar cualquier espacio disponible */
+    /* Asegúrate de aplicar cualquier padding o margen necesario para el contenido */
+  }

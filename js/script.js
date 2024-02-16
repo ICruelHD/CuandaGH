@@ -76,6 +76,9 @@ function onSubmit(token) {
     document.getElementById("demo-form").submit();
 }
 
+
+
+
 // scrip para energia limpia, mostrar mas texto
 function showMoreText() {
     var additionalTexts = document.querySelectorAll('.additional-text');

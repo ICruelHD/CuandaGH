@@ -1,3 +1,6 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,12 +8,32 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Import Google font - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+html, body {
+    height: 100%;
+    margin: 0
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    max-width: 100%;
+}
+
 
 /*------------------------------------ NavBar ---------------------------------------- */
 .navbar {
+    justify-self: center;
     background-color: #065da6;
+    padding: 0;
+    width: 100%;
+}
+.navbar .container{
+    margin: 0;
+}
+.navbar .navbar-toggler .navbar-collapse{
+    margin-left: 5vw;
+    
 }
 
 #navbarNav li a {
@@ -28,10 +51,12 @@
     position: relative;
     z-index: 1000;
 }
-
+.navbar a{
+    justify-content: center;
+}
 .navbar .logo {
     height: 70px;
-    width: auto;
+    width: 70;
     transition: 0.3s;
 }
 
@@ -91,11 +116,7 @@
 
 /*---------------------------------------------- End NavBar ------------------------------------------------------ */
 
-
-
-
-
-.frutas-foother{
+.frutas-foother {
     height: inherit;
     align-items: center;
     text-align: center;
@@ -103,14 +124,17 @@
     display: flex;
     flex-wrap: nowrap;
 }
-.frutas-foother img{
+
+.frutas-foother img {
     height: 4.3vw;
     transition: .1s ease-in-out;
 }
-.frutas-foother img:hover{
+
+.frutas-foother img:hover {
     transform: scale(1.4);
 }
-.frutas-foother a{
+
+.frutas-foother a {
     width: calc(100% / 22);
 }
 
@@ -119,6 +143,7 @@
 .footer {
     background-color: #065da6;
 }
+
 .footer a {
     color: #ffffff;
     font-size: 0.7em;
