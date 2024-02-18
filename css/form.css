@@ -6,15 +6,19 @@
 }
 
 body {
-    background-image: url("../assets/img/fondo.png");
-    background-size: cover;
-    position: relative;
     width: 100%;
 }
 
+
 #contact {
-    background-image: url();
+    flex: 1;
+    background-image: url("../assets/img/contactanos_fondo.png");
     background-size: cover;
+    position: relative;
+    width: 100%;
+    min-height: 110vh;
+    align-items: center;
+    justify-content: center;
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
@@ -63,26 +67,17 @@ body {
     border-color: red;
 }
 
-.contact button[type="submit"] {
-    background: darkblue;
-    color: #fff;
-    border-radius: 10%;
-    width: 15%;
-    height: auto;
-    padding: 5px;
-    margin: 5px;
-
+.contact .btn-primary {
+    background: #065da6;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+    border: 15px;
+    padding: 5 10em;
 }
 
-.contact button[type="submit"]:hover {
-    background: blue;
-}
-
-.contact a {
-    font-size: 1em;
-    color: darkblue;
-    font-weight: bolder;
-    font-style: italic;
+.contact .btn-primary:hover {
+    background: #022a80;
 }
 
 .contact #espacio {

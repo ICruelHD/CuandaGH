@@ -7,18 +7,19 @@
 }
 
 body {
-  background-image: url("../assets/img/fondo.png");
-  background-size: cover;
-  position: relative;
-  width: 100%;
-  overflow-y: scroll;
-
+  height: 100%;
+  margin: 0;
 }
 
 .site-content {
   flex: 1;
-  /* Flex crece para ocupar cualquier espacio disponible */
-  /* Asegúrate de aplicar cualquier padding o margen necesario para el contenido */
+  background-image: url("../assets/img/historia_fondo.png");
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 
 body h1 {
@@ -51,9 +52,11 @@ body h1 {
 }
 
 .timeline {
+  padding: 0;
+  border: 0;
+  margin-bottom: 1vh;
   display: flex;
   flex-wrap: nowrap;
-  padding: 0;
 }
 
 .timeline-item {
@@ -64,53 +67,60 @@ body h1 {
   align-items: center;
 
 }
+
 .timeline-date {
   align-items: start;
   justify-content: center;
   background-color: #065da6;
   color: #fff;
-  padding: 5px 10px;
-  border-radius: 50px;
+  padding: 5px 5px;
+  border-radius: 1%;
   cursor: pointer;
   -webkit-user-select: none;
   user-select: none;
 }
 
 
-.site-content .carousel{
+.site-content .carousel {
   margin-top: 3vh;
-  max-height: 40vh;
-  display: flex;
-  flex-direction: row;
+  height: 30vh;
   align-items: center;
   justify-content: center;
 }
-.images-container {
+
+.images-container, .carousel {
   display: none;
   flex-direction: row;
 }
+
 .carousel-inner {
+  flex-direction: row;
   display: block;
-  max-width: 70%;
-  max-height: 40vh;
-  overflow: hidden;
+  max-width:60%;
+  max-height: 30vh;
   margin: 0;
 }
 
-.carousel-inner .carousel-item{
+.carousel-inner .carousel-item {
+  margin-top: 0;
+  overflow: hidden;
+  white-space: nowrap;
   margin: 0;
-  display: flex;
   justify-content: center;
 }
+
 .carousel-item img {
   max-height: 100%;
   object-fit: cover;
-  max-height: 40vh;
+  max-height: 30vh;
+  margin-right: 1vw;
+  width: calc(100% / 4);
+
 }
 
 @media (max-width: 768px) {
-  .carousel-item .d-flex img {
-    max-width: 75%;
+  .carousel-item img {
+    max-width: 100%;
     /* O cualquier otro ajuste según tu diseño */
   }
 }

@@ -114,19 +114,20 @@ function showMoreText() {
     }
 }
 
+// script para los carruseles de Galeria
+function toggleImages(selectedCarouselId) {
+    var selectedCarousel = document.getElementById(selectedCarouselId);
 
+    // Comprobar si el carrusel seleccionado ya está visible
+    var isVisible = selectedCarousel.style.display === 'flex';
 
-function toggleImages(imagesId) {
-    var imagesDiv = document.getElementById(imagesId);
-    var isHidden = imagesDiv.style.display === "none";
-    // Primero, ocultamos todos los contenedores de imágenes
-    document.querySelectorAll('.images-container').forEach(function(div) {
-        div.style.display = "none";
+    // Primero, oculta todos los carruseles
+    document.querySelectorAll('.carousel').forEach(function (carousel) {
+        carousel.style.display = 'none';
     });
-    // Luego, basado en el estado previo del contenedor en cuestión, lo mostramos o lo ocultamos
-    if (isHidden) {
-        imagesDiv.style.display = "flex";
-    } else {
-        imagesDiv.style.display = "none";
+
+    // Luego, basado en si el carrusel seleccionado estaba visible, lo oculta o muestra
+    if (!isVisible) {
+        selectedCarousel.style.display = 'flex';
     }
 }

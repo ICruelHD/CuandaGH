@@ -5,27 +5,43 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html,
 body {
-    background-image: url("../assets/img/fondo.png");
+    height: 100%;
+    margin: 0
+}
+
+.site-content {
+    display: flex;
+    background-image: url("../assets/img/conoce_fondo.png");
     background-size: cover;
     position: relative;
     width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+.site-content .conoce{
+    width: 70%;
+    min-height: 120vh;
 }
 .conoce .d-flex h1 {
     color: #022a80;
     font-weight: bold;
-    font-size:  4rem;
+    font-size: 4rem;
     border-bottom: transparent solid 2.2vh;
     margin-bottom: 1.5rem;
     margin-right: 1.5rem;
 }
+
 .conoce .d-flex {
-  display: flex;
-  justify-content: flex-start;
-  align-items: end;
-  margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    margin: 0;
 
 }
+
 #conoce .cuandazul {
     max-width: 20vh;
     height: auto;
@@ -92,23 +108,26 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background:#022a80;
+    background: #022a80;
     transition: all 500ms ease-out;
     opacity: 0;
-    visibility:collapse;
+    visibility: collapse;
     text-align: left;
     border-radius: 15px;
 }
-.inf .btn-primary{
+
+.inf .btn-primary {
     background-color: transparent;
     color: #ffffff;
     border: none;
 }
-.inf .btn-primary:hover{
+
+.inf .btn-primary:hover {
     background-color: transparent;
     color: #065da6;
     border: none;
 }
+
 .conoce figure:hover>.inf {
     overflow-y: scroll;
     opacity: 1;
@@ -120,10 +139,12 @@ body {
     margin-bottom: 15px;
     padding: 15px;
 }
-.conoce .card-body{
+
+.conoce .card-body {
     background-color: transparent;
     color: #ffffff;
 }
+
 #conoce2 a {
     margin-bottom: 0px;
 }
