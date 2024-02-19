@@ -46,7 +46,7 @@
     text-align: center;
 }
 .container img {
-    display: flex;
+    display: block;
     margin: 0;
     padding: 3% 0;
     justify-content: center;
@@ -118,21 +118,10 @@ h6 {
     color: #065da6;
 }
 
-.carousel button {
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    background-color: transparent;
-    max-width: 5vw;
-    max-height: 100%;
-    align-content: center;
-}
-
 .carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230e289c' viewBox='0 0 8 8'%3E%3Cpath d='M5.5 0v2h-5v1h5v2l2.5-2.5-2.5-2.5z'/%3E%3C/svg%3E");
 
 }
-
 .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230e289c' viewBox='0 0 8 8'%3E%3Cpath d='M2.5 0l-2.5 2.5 2.5 2.5v-2h5v-1h-5v-2z'/%3E%3C/svg%3E");
 }
