@@ -21,13 +21,13 @@ body {
 
 /*------------------------------------ NavBar ---------------------------------------- */
 .navbar {
-    justify-self: center;
+    justify-self: start;
     background-color: #065da6;
     padding: 0;
     width: 100%;
 }
 .navbar .container{
-    margin: 0;
+    justify-content: left;
 }
 .navbar .navbar-toggler .navbar-collapse{
     margin-left: 5vw;
@@ -50,11 +50,11 @@ body {
     z-index: 1000;
 }
 .navbar a{
-    justify-content: center;
+    justify-content: start;
 }
 .navbar .logo {
-    height: 70px;
-    width: 70;
+    height: 10vh;
+    width: auto;
     transition: 0.3s;
 }
 

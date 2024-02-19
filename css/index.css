@@ -9,7 +9,9 @@ body {
     background: #ffffff;
     max-width: 100%;
 }
-html, body{
+
+html,
+body {
     height: 100%;
     margin: 0
 }
@@ -164,16 +166,18 @@ video {
         min-height: 8vh;
         align-items: center;
         justify-content: center;
-        background: #ffffff;
+        background: #d31212;
     }
 
-    .wrapper i:last-child, i:first-child {
-        display:none;
+    .wrapper i:last-child,
+    i:first-child {
+        display: none;
         right: 0;
         z-index: -3;
     }
+
     .wrapper i {
-        display:none;
+        display: none;
     }
 
     .wrapper {
@@ -183,7 +187,7 @@ video {
     }
 
     .carousel img {
-        height: 6vh;
+        height: 5vh;
         object-fit: cover;
         -webkit-user-select: none;
         user-select: none;
@@ -196,7 +200,13 @@ video {
         transition: 0.5s;
     }
 
-
+    .informacion .social a {
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        text-decoration: none;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -221,6 +231,21 @@ video {
         border-bottom: 5px solid #022a80;
         width: calc(100% / 8);
         transition: 0.5s;
+
+    }
+
+    .informacion .social a {
+        color: #fff;
+        width: 60px;
+        height: 60px;
+    }
+
+    .informacion .social a {
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        text-decoration: none;
+        align-items: center;
     }
 }
 
@@ -266,7 +291,7 @@ video {
 
 .informacion .social {
     margin-top: 1%;
-    background: #1C3A8C;
+    background: #065da6;
     width: 60px;
     height: 60px;
     display: inline-flex;
@@ -278,7 +303,14 @@ video {
 }
 
 .informacion .social a {
+    display: flex;
+    justify-content: center;
     color: #fff;
+    text-decoration: none;
+    align-items: center;
+}
+.informacion .social:hover {
+    background: #022a80;
 }
 
 /*---- End seccion info --- */

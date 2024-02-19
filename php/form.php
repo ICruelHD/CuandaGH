@@ -7,7 +7,7 @@ $Estado = $POST['Estado'];
 $Alcaldia = $POST['Alcaldia'];
 $telefono = $_POST['Telefono'];
 $mensaje = nl2br($_POST['mensaje']);
-$to = "aimeemoreno71@gmail.com, barza.-chivas@hotmail.com";
+$to = "barza.-chivas@hotmail.com";
 $from = $email;
 $message = 'Empresa:' . $Empresa . ' 
     Nombre:' . $Nombre . '
@@ -26,5 +26,3 @@ if (mail($to, $Asunto, utf8_decode($message), $headers)) {
             alert('Por favor enviar más tarde');
             </script>";
 }
-
-?>

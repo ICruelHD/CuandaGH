@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .contenedor-video {
@@ -44,14 +45,13 @@
     margin: auto;
     text-align: center;
 }
-
 .container img {
-    display: block;
-    margin: auto;
+    display: flex;
+    margin: 0;
     padding: 3% 0;
-    text-align: 0;
     justify-content: center;
     align-items: center;
+    max-height: 60vh;
 }
 
 table {
@@ -86,6 +86,8 @@ th {
 h5 {
     background-color: #065da6;
     color: #ffffff;
+    max-width: 20vw;
+    border-radius: 40px;
 }
 
 h6 {
@@ -95,8 +97,7 @@ h6 {
     text-align: center;
 }
 
-.container .row,
-.column {
+.container .row, .column {
     padding: 0;
     margin: 0;
     border: 0;
@@ -111,7 +112,27 @@ h6 {
     padding: 5 10em;
     transition: 0.5s;
 }
-.carousel-inner .btn:hover{
+
+.carousel-inner .btn:hover {
     background: #ffffff;
     color: #065da6;
+}
+
+.carousel button {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    background-color: transparent;
+    max-width: 5vw;
+    max-height: 100%;
+    align-content: center;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230e289c' viewBox='0 0 8 8'%3E%3Cpath d='M5.5 0v2h-5v1h5v2l2.5-2.5-2.5-2.5z'/%3E%3C/svg%3E");
+
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230e289c' viewBox='0 0 8 8'%3E%3Cpath d='M2.5 0l-2.5 2.5 2.5 2.5v-2h5v-1h-5v-2z'/%3E%3C/svg%3E");
 }
