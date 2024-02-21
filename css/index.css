@@ -60,48 +60,40 @@ video {
     }
 }
 
-/*--- Ende Cont Video ---*/
+/*-------------------------------------------- Ende Cont Video -------------------------------*/
 
 /*---- Carrusel --- */
 .contenedor-ext {
     display: flex;
-    padding: 0 10px;
-    min-height: 18vh;
+    padding: 5 10px;
+    height: 500px;
     align-items: center;
     justify-content: center;
-    background: #ffffff;
+    background: transparent;
 }
 
 .wrapper {
     display: flex;
+    max-height: 95%;
     max-width: 80%;
     position: relative;
 }
 
 .wrapper i {
     top: 50%;
-    height: 44px;
-    width: 44px;
-    color: #022a80;
+    color: #065da6;
     cursor: pointer;
-    font-size: 1.15rem;
-    font-weight: bold;
+    font-size: 4rem;
     position: absolute;
     text-align: center;
     line-height: 44px;
-    background: #008674;
-    border-radius: 50%;
     transform: translateY(-50%);
-    transition: transform 0.1s linear;
+    transition: transform 0.5s linear;
     z-index: 1;
 }
 
 .wrapper i:active {
-    transform: translateY(-50%) scale(0.9);
-}
-
-.wrapper i:hover {
-    background: #12e115;
+    transform: translateY(-50%) scale(0.8);
 }
 
 .wrapper i:first-child {
@@ -135,15 +127,15 @@ video {
 }
 
 .carousel img {
-    height: 15vh;
+    height: auto;
     object-fit: cover;
     -webkit-user-select: none;
     user-select: none;
     margin-left: 2vw;
-    border-left: 3px solid #022a80;
-    border-top: 3px solid #022a80;
-    border-right: 10px solid #022a80;
-    border-bottom: 10px solid #022a80;
+    border-left: 3px solid #065da6;
+    border-top: 3px solid #065da6;
+    border-right: 10px solid #065da6;
+    border-bottom: 10px solid #065da6;
     width: calc(100% / 9);
     transition: 0.5s;
 
@@ -187,7 +179,7 @@ video {
     }
 
     .carousel img {
-        height: 5vh;
+        height: auto;
         object-fit: cover;
         -webkit-user-select: none;
         user-select: none;
@@ -213,13 +205,13 @@ video {
     .contenedor-ext {
         display: flex;
         padding: 0 10px;
-        min-height: 10vh;
+        height: 400px;
         align-items: center;
         justify-content: center;
     }
 
     .carousel img {
-        height: 10vh;
+        height: auto;
         object-fit: cover;
         -webkit-user-select: none;
 
@@ -251,7 +243,7 @@ video {
 
 /*------------------------------------- End Carrusel ------------------------------ */
 
-/*---- seccion info --- */
+/*------------------------------------- seccion info ---------------------------- */
 .informacion {
     background-color: #ffffff;
     text-align: center;
@@ -281,12 +273,19 @@ video {
 
 .informacion .shop {
     max-width: 20vh;
+    transition: 0.5s;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 .informacion p {
     font-size: 1.1em;
     font-weight: bold;
     text-align: center;
+}
+
+.informacion .shop:hover {
+    transform: scale(1.2);
 }
 
 .informacion .social {
@@ -302,15 +301,16 @@ video {
     padding-bottom: 0px;
 }
 
-.informacion .social a {
+.informacion .social i {
     display: flex;
     justify-content: center;
     color: #fff;
     text-decoration: none;
     align-items: center;
 }
+
 .informacion .social:hover {
-    background: #022a80;
+    background: #065da6;
 }
 
 /*---- End seccion info --- */
@@ -338,13 +338,15 @@ video {
 
 
 .footer p {
+    margin: 0;
+    text-align: center;
     color: #ffffff;
     font-size: 1em;
     text-decoration: none;
     transition: 3ms;
 }
 
-footer a:hover {
+footer p:hover {
     color: #12e115;
 }
 

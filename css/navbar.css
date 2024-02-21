@@ -8,12 +8,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0
 }
 
 body {
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     max-width: 100%;
@@ -21,22 +23,30 @@ body {
 
 /*------------------------------------ NavBar ---------------------------------------- */
 .navbar {
-    justify-self: start;
+    display: block;
+    justify-self: center;
     background-color: #065da6;
     padding: 0;
-    width: 100%;
+    max-width: 100%;
 }
-.navbar .container{
-    justify-content: left;
+
+.navbar .container {
+    max-width: 85%;
+    padding: 0px;
+    align-items: center;
 }
-.navbar .navbar-toggler .navbar-collapse{
-    margin-left: 5vw;
-    
+
+.collapse .navbar-nav {
+    max-width: 80%;
+    justify-content: center;
+    align-items: center;
+    font-size: .9em;
+    margin-left: 5%;
 }
 
 #navbarNav li a {
+    text-align: center;
     color: #ffffff;
-    font-size: 1em;
     transition: 0.7s;
 }
 
@@ -49,17 +59,15 @@ body {
     position: relative;
     z-index: 1000;
 }
-.navbar a{
-    justify-content: start;
-}
+
 .navbar .logo {
-    height: 10vh;
+    height: 9vh;
     width: auto;
     transition: 0.3s;
 }
 
 .navbar .logo:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .dropdown .btn {
@@ -67,12 +75,23 @@ body {
     margin: 0%;
 }
 
+
 .dropdown-menu .dropdown-item {
     font-weight: bold;
     color: #ffffff;
     background-color: transparent;
 }
 
+.dropdown-menu .list-unstyled {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    justify-content: center;
+    text-align: center;
+}
+.list-unstyled .dropdown-submenu{
+    margin: 0px;
+}
 .dropdown:hover>.dropdown-menu {
     display: block;
 }
@@ -87,11 +106,6 @@ body {
     background-color: #022a80;
 }
 
-.dropdown-menu .list-unstyled {
-    text-align: center;
-    margin: 0;
-}
-
 .dropdown-submenu {
     position: relative;
 }
@@ -100,7 +114,6 @@ body {
     top: 100%;
     left: 20%;
     margin: top 0.5rem;
-    ;
 }
 
 .dropdown-submenu:hover>.dropdown-menu {
@@ -108,7 +121,7 @@ body {
 }
 
 .frutas {
-    height: 30px;
+    height: 27px;
     width: auto;
 }
 
