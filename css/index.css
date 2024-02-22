@@ -69,42 +69,35 @@ video {
     height: 500px;
     align-items: center;
     justify-content: center;
-    background: transparent;
+    background: #ffffff;
 }
-
 .wrapper {
     display: flex;
     max-height: 95%;
-    max-width: 80%;
+    max-width: 75%;
     position: relative;
 }
-
 .wrapper i {
     top: 50%;
     color: #065da6;
     cursor: pointer;
-    font-size: 4rem;
+    font-size: 4em;
     position: absolute;
     text-align: center;
-    line-height: 44px;
     transform: translateY(-50%);
     transition: transform 0.5s linear;
     z-index: 1;
 }
-
 .wrapper i:active {
     transform: translateY(-50%) scale(0.8);
 }
-
 .wrapper i:first-child {
     left: -50px;
     display: none;
 }
-
 .wrapper i:last-child {
     right: -50px;
 }
-
 .wrapper .carousel {
     font-size: 0px;
     cursor: pointer;
@@ -112,82 +105,65 @@ video {
     white-space: nowrap;
     scroll-behavior: smooth;
 }
-
 .carousel.dragging {
     cursor: grab;
     scroll-behavior: auto;
 }
-
 .carousel.dragging img {
     pointer-events: none;
 }
-
 .carousel a {
     margin-left: 1vw;
 }
-
 .carousel img {
     height: auto;
     object-fit: cover;
     -webkit-user-select: none;
     user-select: none;
     margin-left: 2vw;
-    border-left: 3px solid #065da6;
-    border-top: 3px solid #065da6;
-    border-right: 10px solid #065da6;
-    border-bottom: 10px solid #065da6;
+    border-left: 0.5vh solid #065da6;
+    border-top: 0.3vw solid #065da6;
+    border-right: 1vh solid #065da6;
+    border-bottom: 1vw solid #065da6;
     width: calc(100% / 9);
     transition: 0.5s;
-
 }
-
 .carousel img:hover {
     transform: scale(1.2);
     z-index: 2;
 }
-
 .carousel img:first-child {
     margin-left: 0px;
 }
-
 @media (min-width: 200px) and (max-width: 550px) {
     .contenedor-ext {
         max-width: 100%;
         display: flex;
         padding: 0px;
-        min-height: 8vh;
+        height: 10px;
         align-items: center;
         justify-content: center;
-        background: #d31212;
+        background: transparent;
     }
-
-    .wrapper i:last-child,
-    i:first-child {
+    .wrapper i:last-child, i:first-child {
         display: none;
         right: 0;
         z-index: -3;
     }
-
     .wrapper i {
         display: none;
     }
-
     .wrapper {
         display: flex;
         max-width: 100%;
         position: relative;
     }
-
     .carousel img {
         height: auto;
         object-fit: cover;
         -webkit-user-select: none;
         user-select: none;
         margin-left: 2vw;
-        border-left: 1px solid #022a80;
-        border-top: 1px solid #022a80;
-        border-right: 2px solid #022a80;
-        border-bottom: 2px solid #022a80;
         width: calc(100% / 7);
         transition: 0.5s;
     }
@@ -200,7 +176,6 @@ video {
         align-items: center;
     }
 }
-
 @media screen and (max-width: 900px) {
     .contenedor-ext {
         display: flex;
@@ -209,29 +184,20 @@ video {
         align-items: center;
         justify-content: center;
     }
-
     .carousel img {
         height: auto;
         object-fit: cover;
         -webkit-user-select: none;
-
         user-select: none;
         margin-left: 2vw;
-        border-left: 1px solid #022a80;
-        border-top: 1px solid #022a80;
-        border-right: 5px solid #022a80;
-        border-bottom: 5px solid #022a80;
         width: calc(100% / 8);
         transition: 0.5s;
-
     }
-
     .informacion .social a {
         color: #fff;
         width: 60px;
         height: 60px;
     }
-
     .informacion .social a {
         display: flex;
         justify-content: center;
@@ -288,30 +254,26 @@ video {
     transform: scale(1.2);
 }
 
-.informacion .social {
-    margin-top: 1%;
-    background: #065da6;
-    width: 60px;
-    height: 60px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    margin-right: 5px;
-    padding-bottom: 0px;
-}
-
-.informacion .social i {
+.informacion .row{
     display: flex;
-    justify-content: center;
-    color: #fff;
-    text-decoration: none;
-    align-items: center;
+    
 }
 
-.informacion .social:hover {
-    background: #065da6;
+
+
+.social i {
+    font-size: 30px;
+    margin: 5px;
+    justify-content: center;
+    background-color: #065da6;
+    color: #ffffff;
+    align-items: center;
 }
+.social .bi{
+    width: 25px;
+    height: 25px;
+}
+
 
 /*---- End seccion info --- */
 /*----------------------------------------------- Foother ------------------------------------------------------- */
