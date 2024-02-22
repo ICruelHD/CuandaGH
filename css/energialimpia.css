@@ -15,24 +15,31 @@ body {
 
 .contenedor-energia .container {
   max-width: 90%;
-  min-height: 80vh;
+  min-height: 100vh;
   flex-wrap: nowrap;
   display: flex;
 }
 
 .contenedor-energia h2 {
+  width: 100%;
+  display: block;
   color: #022a80;
   font-weight: bold;
   font-size: 4rem;
   border-bottom: transparent solid 2.2vh;
   margin-bottom: 1.5rem;
-  margin-right: 1.5rem;
+  align-items: end;
 }
 
+.bloque-texto{
+  display: block;
+  margin-top: 10vh;
+  align-items: center;
+}
 
 .bloque-imagen img {
-  height: 70%;
-  width: auto;
+  width: 40vw;
+  height: auto;
   object-fit: cover;
   z-index: -1;
 }
@@ -44,6 +51,8 @@ body {
 }
 
 .bloque-texto p {
+  width: 100%;
+  display: block;
   color: #022a80;
   font-weight: bold;
 }
@@ -57,21 +66,9 @@ body {
 
 /* Estilos para pantallas pequeñas */
 @media (max-width:960px) {
-  .contenedor-energia .bloque-texto {
-    background-image: url('../assets/img/energialimpia.png');
-    /* Ajusta la ruta de la imagen */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    /* Asegúrate de que el color del texto sea legible sobre la imagen */
-  }
-
   .contenedor-energia .bloque-imagen {
     display: none;
-    /* Oculta el bloque de imagen en pantallas pequeñas */
   }
-
   .bloque-texto p {
     color: #022a80;
     font-weight: bold;

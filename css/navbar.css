@@ -45,9 +45,11 @@ body {
 }
 
 #navbarNav li a {
+    display: flex;
     text-align: center;
     color: #ffffff;
     transition: 0.7s;
+    justify-content: center;
 }
 
 #navbarNav li a:hover {
@@ -75,13 +77,11 @@ body {
     margin: 0%;
 }
 
-
 .dropdown-menu .dropdown-item {
     font-weight: bold;
     color: #ffffff;
     background-color: transparent;
 }
-
 .dropdown-menu .list-unstyled {
     margin: 0px;
     padding: 0px;

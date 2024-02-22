@@ -7,16 +7,15 @@
 
 body {
     width: 100%;
+    height: auto;
 }
-
-
 #contact {
     flex: 1;
     background-image: url("../assets/img/contactanos_fondo.png");
     background-size: cover;
     position: relative;
     width: 100%;
-    min-height: 110vh;
+    min-height: 130vh;
     align-items: center;
     justify-content: center;
     padding-bottom: 0px;
@@ -25,18 +24,18 @@ body {
 
 .contact h1 {
     font-size: 2em;
-    color: darkblue;
+    color: #022a80;
     padding: 5px;
 }
 
 .contact h2 {
     font-size: 1.5em;
-    color: darkblue;
+    color: #022a80;
     font-weight: 400;
 }
 
 .contact select {
-    background-color: darkblue;
+    background-color: #022a80;
     padding: 5px;
     color: white;
     margin-top: 5px;
@@ -84,8 +83,8 @@ body {
     padding-top: 50px;
 }
 
-.informacion {
-    color: darkblue;
+.contact .informacion {
+    color: #065da6;
     font-size: 1em;
     text-decoration: none;
 }

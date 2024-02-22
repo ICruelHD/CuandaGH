@@ -23,7 +23,7 @@ body {
 }
 .site-content .conoce{
     width: 70%;
-    min-height: 120vh;
+    min-height: 130vh;
 }
 .conoce .d-flex h1 {
     color: #022a80;
@@ -47,7 +47,6 @@ body {
     height: auto;
     margin: 0;
 }
-
 
 #conoce2 {
     background-color: #065da6;
@@ -117,9 +116,12 @@ body {
 }
 
 .inf .btn-primary {
+    display: flex;
     background-color: transparent;
     color: #ffffff;
     border: none;
+    justify-content: left;
+
 }
 
 .inf .btn-primary:hover {
@@ -127,7 +129,10 @@ body {
     color: #065da6;
     border: none;
 }
-
+.inf li {
+    text-align: left;
+    padding-left: 0%;
+}
 .conoce figure:hover>.inf {
     overflow-y: scroll;
     opacity: 1;
