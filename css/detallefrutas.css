@@ -39,10 +39,11 @@
     }
 }
 
+
 .carousel-inner .container {
     font-family: Arial, sans-serif;
     max-width: 90%;
-    margin: auto;
+    margin: 10px solid #ff0101;
     text-align: center;
 }
 .container img {
@@ -64,19 +65,21 @@ table .titulo {
     font-weight: bold;
     color: #065da6;
     text-align: right;
+    font-size: 0.9em;
 }
 
 table .descripcion {
     font-weight: bold;
     color: #020202;
     text-align: left;
+    font-size: 0.9em;
 }
 
-th,
-td {
+th, td {
     border: 1px solid rgb(255, 255, 255);
     text-align: left;
     padding: 2px;
+
 }
 
 th {
@@ -96,8 +99,10 @@ h6 {
     align-items: center;
     text-align: center;
 }
-
-.container .row, .column {
+.container .row{
+    justify-items: center;
+}
+.container .row {
     padding: 0;
     margin: 0;
     border: 0;
@@ -116,6 +121,14 @@ h6 {
 .carousel-inner .btn:hover {
     background: #ffffff;
     color: #065da6;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%; /* Centra verticalmente */
+  transform: translateY(-50%); /* Desplaza hacia arriba para alinear correctamente */
+  height: 10vh; /* O el alto que prefieras */
+  width: 10vh;
 }
 
 .carousel-control-next-icon {

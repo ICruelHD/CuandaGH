@@ -117,15 +117,12 @@ function showMoreText() {
 // script para los carruseles de Galeria
 function toggleImages(selectedCarouselId) {
     var selectedCarousel = document.getElementById(selectedCarouselId);
-
     // Comprobar si el carrusel seleccionado ya está visible
     var isVisible = selectedCarousel.style.display === 'flex';
-
     // Primero, oculta todos los carruseles
     document.querySelectorAll('.carousel').forEach(function (carousel) {
         carousel.style.display = 'none';
     });
-
     // Luego, basado en si el carrusel seleccionado estaba visible, lo oculta o muestra
     if (!isVisible) {
         selectedCarousel.style.display = 'flex';

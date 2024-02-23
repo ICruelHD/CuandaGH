@@ -41,6 +41,10 @@ body h1 {
   justify-content: center;
 }
 
+.timeline-container .fecha {
+  display: block;
+}
+
 .timeline-logo {
   flex: 0 0 auto;
   margin-right: 4vw;
@@ -56,12 +60,14 @@ body h1 {
   border: 0;
   margin-bottom: 1vh;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .timeline-item {
   padding: 0;
+  min-width: 4vw;
   margin-right: 2vw;
+  margin-bottom: 1vh;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -88,7 +94,8 @@ body h1 {
   justify-content: center;
 }
 
-.images-container, .carousel {
+.images-container,
+.carousel {
   display: none;
   flex-direction: row;
 }
@@ -96,7 +103,7 @@ body h1 {
 .carousel-inner {
   flex-direction: row;
   display: block;
-  max-width:60%;
+  max-width: 60%;
   max-height: 30vh;
   margin: 0;
 }
