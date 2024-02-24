@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 .contenedor-video {
@@ -34,7 +35,7 @@
 }
 
 .container img {
-    display: block;
+    display: blockz;
     margin: 0;
     padding: 3% 0;
     justify-content: center;
@@ -96,18 +97,23 @@ h6 {
 }
 
 .container .row {
-    padding: 0;
+    padding: 5px;
     margin: 0;
-    border: 0;
+    border: 1vh;
 
 }
 
-.row .declaracionN {
-    max-height: 8vh;
+.row .declaracionN,
+.codigo-barras {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    justify-content: center;
 }
 
-.container .row .p {
+.ingredientes {
     text-align: justify;
+
 }
 
 .carousel-inner .btn {
