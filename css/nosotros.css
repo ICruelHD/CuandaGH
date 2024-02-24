@@ -13,22 +13,26 @@ body {
 
 .site-content {
     display: flex;
-    background-image: url("../assets/img/conoce_fondo.png");
-    background-size: cover;
-    position: relative;
     width: 100%;
     height: auto;
+    background-image: url("../assets/img/conoce_fondo.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
     align-items: center;
     justify-content: center;
 }
-.site-content .conoce{
+
+.site-content .conoce {
+    position: relative;
     width: 70%;
-    min-height: 130vh;
+    min-height: 140vh;
 }
 .conoce .d-flex h1 {
     color: #022a80;
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 4vw;
     border-bottom: transparent solid 2.2vh;
     margin-bottom: 1.5rem;
     margin-right: 1.5rem;
@@ -38,12 +42,12 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: end;
-    margin: 0;
+    margin-top: 6VH;
 
 }
 
 #conoce .cuandazul {
-    max-width: 20vh;
+    max-width: 10vw;
     height: auto;
     margin: 0;
 }
@@ -114,14 +118,18 @@ body {
     text-align: left;
     border-radius: 15px;
 }
+.inf .btn{
+    justify-content: left;
+
+}
 
 .inf .btn-primary {
+    text-align: left;
     display: flex;
     background-color: transparent;
     color: #ffffff;
     border: none;
     justify-content: left;
-
 }
 
 .inf .btn-primary:hover {
@@ -129,10 +137,13 @@ body {
     color: #065da6;
     border: none;
 }
+
 .inf li {
+    list-style: square outside;
     text-align: left;
     padding-left: 0%;
 }
+
 .conoce figure:hover>.inf {
     overflow-y: scroll;
     opacity: 1;
@@ -151,5 +162,8 @@ body {
 }
 
 #conoce2 a {
+    display: flex;
+    justify-content: left;
     margin-bottom: 0px;
+    padding: 0;
 }
