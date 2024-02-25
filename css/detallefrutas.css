@@ -22,7 +22,7 @@
 /* Media query para pantallas de hasta 768px de ancho */
 
 .contenedor-video video {
-    height: 20VH;
+    height: 17vh;
     width: 100%;
 }
 
@@ -30,16 +30,16 @@
 .carousel-inner .container {
     font-family: Arial, sans-serif;
     max-width: 90%;
-    margin: 10px solid #ff0101;
     text-align: center;
 }
 
-.container img {
-    display: blockz;
+.container .bolsa {
+    display: flex;
     margin: 0;
     padding: 3% 0;
     justify-content: center;
     align-items: center;
+    text-align: center;
     max-height: 60vh;
 }
 
@@ -92,20 +92,11 @@ h6 {
 .container .row {
     justify-content: center;
     justify-items: center;
-    justify-self: center;
-    margin: .5em;
-}
-
-.container .row {
     padding: 5px;
-    margin: 0;
-    border: 1vh;
-
 }
 
-.row .declaracionN,
-.codigo-barras {
-    width: 100%;
+.row .codi-decl{
+    width: 10vw;
     height: auto;
     overflow: hidden;
     justify-content: center;
@@ -113,7 +104,7 @@ h6 {
 
 .ingredientes {
     text-align: justify;
-
+    padding-top: 5px;
 }
 
 .carousel-inner .btn {
