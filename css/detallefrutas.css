@@ -22,8 +22,8 @@
 /* Media query para pantallas de hasta 768px de ancho */
 
 .contenedor-video video {
-    height: 17vh;
-    width: 100%;
+    height: auto;
+    width: 90%;
 }
 
 
