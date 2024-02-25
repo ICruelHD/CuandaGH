@@ -63,14 +63,20 @@ table .descripcion {
     font-size: 0.9em;
 }
 
-th,
+th, 
 td {
     border: 1px solid rgb(255, 255, 255);
     text-align: left;
     padding: 2px;
 
 }
-
+table .bordefila{
+    border-bottom: 4px solid #065da6;
+}
+table #bgfila{
+    z-index:  -1;
+   background-color: #d8ecfc;
+}
 th {
     background-color: #0e289c;
 }
