@@ -4,7 +4,12 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+html,
+body {
+    height: 100%;
+    margin: 0;
+    overflow-y: auto;
+}
 .contenedor-video {
     z-index: 1;
     justify-content: center;
