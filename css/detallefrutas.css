@@ -10,6 +10,17 @@ body {
     margin: 0;
     overflow-y: auto;
 }
+.site-content {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
 .contenedor-video {
     z-index: 1;
     justify-content: center;
@@ -79,7 +90,6 @@ table .bordefila{
     border-bottom: 4px solid #065da6;
 }
 table #bgfila{
-    z-index:  -1;
    background-color: #d8ecfc;
 }
 th {
@@ -177,7 +187,7 @@ h6 {
     }
 
     .container img {
-        display: block;
+        display: flex;
         margin: 0;
         padding: 3% 0;
         justify-content: center;
