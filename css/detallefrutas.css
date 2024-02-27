@@ -7,9 +7,9 @@
 
 html,
 body {
-    height: 100%;
+    height: auto;
     margin: 0;
-    overflow-y: auto;
+    overflow-x: auto;
 }
 
 .site-content {
@@ -36,7 +36,6 @@ body {
 .contenedor-video video {
     height: auto;
     width: 90%;
-    overflow-y:visible;
 }
  .site-content .carousel{
     height: 100%;
