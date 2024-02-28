@@ -1,28 +1,50 @@
 <?php
-$Asunto = $POST['asunto'];
-$Empresa = $_POST['Empresa']; // HINT: use preg_replace() to filter the data
-$Nombre = $_POST['Nombre'];
-$email = $_POST['email'];
-$Estado = $POST['Estado'];
-$Alcaldia = $POST['Alcaldia'];
-$telefono = $_POST['Telefono'];
-$mensaje = nl2br($_POST['mensaje']);
-$to = "barza.-chivas@hotmail.com";
-$from = $email;
-$message = 'Empresa:' . $Empresa . ' 
-    Nombre:' . $Nombre . '
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $destinatarioCodigo = $_POST['asunto'];
+
+    $Asunto = $POST['asunto'];
+    $Empresa = $_POST['Empresa'];
+    $Nombre = $_POST['Nombre'];
+    $email = $_POST['email'];
+    $Estado = $POST['Estado'];
+    $Alcaldia = $POST['Alcaldia'];
+    $telefono = $_POST['Telefono'];
+    $mensaje = nl2br($_POST['mensaje']);
+
+
+    // Determina el destinatario basado en el valor enviado
+    switch ($destinatarioCodigo) {
+        case "dest1":
+            $destinatarioEmail  = "lsca_Gabriel_HS@Hotmail.com";
+            break;
+        case "dest2":
+            $destinatarioEmail  = "lsca_Gabriel_HS@Hotmail.com";
+            break;
+        case "dest3":
+            $destinatarioEmail  = "lsca_Gabriel_HS@Hotmail.com";
+            break;
+        default:
+            echo "Destinatario no válido.";
+            exit;
+    }
+
+    // Aquí iría el código para enviar el correo electrónico...
+    $exito = mail(
+        $destinatarioEmail, 
+        $email, 
+        $message = 'Empresa:' . $Empresa . ' 
+        Nombre:' . $Nombre . '
 	Correo:' . $email . '
     Estado: ' . $Estado . '
     Alcaldía: ' . $Alcaldia . '
 	No. telefonico: ' . $telefono . '
-	Mensaje: ' . $mensaje . '';
-$headers = "From: $from\n";
-$headers .= "MIME-Version: 1.0\n";
-$headers .= "Content-type: text/html; charset=UTF-8\n";
-if (mail($to, $Asunto, utf8_decode($message), $headers)) {
-    header('Location:index.html');
+	Mensaje: ' . $mensaje . '');
+
+    if ($exito) {
+        echo "Mensaje enviado con éxito.";
+    } else {
+        echo "Hubo un error al enviar el mensaje.";
+    }
 } else {
-    echo "<script>
-            alert('Por favor enviar más tarde');
-            </script>";
+    echo "Método no permitido";
 }
