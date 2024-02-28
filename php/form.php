@@ -11,17 +11,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $telefono = $_POST['Telefono'];
     $mensaje = nl2br($_POST['mensaje']);
 
-
     // Determina el destinatario basado en el valor enviado
     switch ($destinatarioCodigo) {
         case "dest1":
-            $destinatarioEmail  = "lsca_Gabriel_HS@Hotmail.com";
+            $destinatarioEmail = "lsca_Gabriel_HS@Hotmail.com";
             break;
         case "dest2":
-            $destinatarioEmail  = "lsca_Gabriel_HS@Hotmail.com";
+            $destinatarioEmail = "lsca_Gabriel_HS@Hotmail.com";
             break;
         case "dest3":
-            $destinatarioEmail  = "lsca_Gabriel_HS@Hotmail.com";
+            $destinatarioEmail = "lsca_Gabriel_HS@Hotmail.com";
             break;
         default:
             echo "Destinatario no válido.";
